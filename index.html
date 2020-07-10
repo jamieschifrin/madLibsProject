@@ -10,22 +10,46 @@
 <body>
     
     <h1>Mad Libs Photo Shoot </h1>
-    <p>Fill out these questions to generate your own silly mad libs story instantly online! (Hint: a Verb is an action. An adverb usually ends in “ly” and describes an action (like slowly). A noun is a person/place/thing. An adjective describes a person/place/thing.)</p>
-    <div class="grid-container">
-        <div class="grid-item">Animals <input type="text" name="" id="" placeholder="Animals"></div>
-        <div class="grid-item">Feeling<input type="text" name="" id="" placeholder="Feeling"></div>
-        <div class="grid-item">Things (Plural)<input type="text" name="" id="" placeholder="Things"></div>
-        <div class="grid-item">Professional<input type="text" name="" id="" placeholder="Professional" ></div>
-        <div class="grid-item">A Piece of Clothing <input type="text" name="" id="" placeholder="A Piece of Clothing"></div>
-        <div class="grid-item">Things Plural <input type="text" name="" id="" placeholder="Things (plural)"></div>
-        <div class="grid-item">A Person <input type="text" name="" id="" placeholder="Person"></div>
-        <div class="grid-item">A Place<input type="text" name="" id="" placeholder="Place"></div>
-        <div class="grid-item">Verb(ending in ing)<input type="text" name="" id="" placeholder="Verb"Food></div>
-        <div class="grid-item">Person<input type="text" name="" id="" placeholder="Verb"Person></div>
-    
-       
-    </div>
-<P>I just got back from a pizza party with PERSON. Can you believe we got to eat ADJECTIVE pizza in PLACE?! Everyone got to choose their own toppings. I made 'FOOD and THINGS' pizza, which is my favorite! They even stuffed the crust with THINGS. How FEELINGS! If that wasn't good enough already, CELEBRITY was there singing SONG TITLE. I was so inspired by the music, I had to get up out of my seat and VERB.</P>
 
+    <img src="./b.jpg" alt="" id='picture' height="450px" width="450px" class='lash'>
+
+
+
+    <p class="toptext">Fill out these questions to generate your own silly mad libs story instantly online! <br>(Hint: a Verb is an action. An adverb usually ends in “ly” and describes an <br>
+         action (like slowly). A noun is a person/place/thing. An adjective describes a person/place/thing.)</p>
+
+    
+    <form class="grid-container">
+
+        
+
+        <div class="grid-item">Animals <input type="text" name="" id="animals" placeholder="Animals"></div>
+
+        <div class="grid-item">Feeling <input type="text" name="" id="feeling" placeholder="Feeling"></div>
+
+        <div class="grid-item">Things (Plural) <input type="text" name="" id="things" placeholder="Things (Plural)"></div>
+
+        <div class="grid-item">A Professional <input type="text" name="" id="Professional" placeholder="Professional" ></div>
+
+        <div class="grid-item">A Piece of Clothing <input type="text" name="" id="clothing" placeholder="A Piece of Clothing"></div>
+
+        <div class="grid-item">Things (Plural) <input type="text" name="" id="thingsPlural" placeholder="Things (plural)"></div>
+
+        <div class="grid-item">A Person <input type="text" name="" id="person" placeholder="Person"></div>
+
+        <div class="grid-item">A Place <input type="text" name="" id="place" placeholder="Place"></div>
+
+        <div class="grid-item">Verb (ending in ing) <input type="text" name="" id="verb" placeholder="Verb (ending in ing)"></div>
+
+        <div class="grid-item">Food <input type="text" name="" id="food" placeholder="Food"></div>
+
+        
+        <button type='button' class='margin' style="color:black;  height:35px; background-color: cadetblue; font-size: 20px ;" onclick='createParagraph()'>Submit</button>
+    </form>
+
+    <div id="answer"></div>
+
+
+<script src="./app.js"></script>
 </body>
 </html>
